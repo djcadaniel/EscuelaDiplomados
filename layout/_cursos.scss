@@ -1,0 +1,137 @@
+.cursos {
+    @include flex-fila;
+    align-items: flex-start;
+    width: 100%;
+    min-width: 290px;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: $white;
+}
+
+.cursos__left {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    padding: 0 5%;
+}
+
+.cursos__left--title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.cursos__contain {
+    @include flex-col;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+}
+
+.cursos__contain button {
+    display: block;
+    padding: 3%;
+    width: 70%;
+    border-radius: 15px;
+    border: none;
+    text-decoration: none;
+    color: $white;
+    background-color: $red;
+    transition: all .5s;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.cursos__details {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    border-radius: 10px;
+    
+}
+
+.cursos__details--title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.curso__details--text {
+    position: absolute;
+    bottom: 6%;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    padding: 2%;
+    border-radius: 10px;
+    color: black;
+    background-color: $white;
+}
+
+.borrarCurso {
+    color: red;
+    display: none;
+}
+
+.addCurso {
+    display: block;
+}
+
+.bloque {
+    @include flex-fila;
+    align-items: flex-start;
+    height: 85%;
+    width: 90%;
+    font-size: 1.6rem;
+    background-color: $fondoEspecializacion;
+}
+.submenu-btn{
+    display: none;
+}
+.submenu{
+    display: none;
+}
+
+@media only screen and(max-width:964px) {
+    .cursos {
+        position: relative;
+        height: auto;
+    }
+
+    .cursos__left {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .cursos__contain button {
+        display: block;
+        padding: 3%;
+        width: 100%;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: $black;
+        background-color: $red;
+        transition: all .5s;
+        cursor: pointer;
+    }
+
+    .cursos__contain {
+        width: 100%;
+        height: auto;
+    }
+
+    .cursos__details {
+        display: none;
+    }
+
+    .submenu-btn{
+        display: block;
+    }
+    .submenu{
+        display: block;
+        height: 0;
+        overflow: hidden;
+        background-color: green;
+        transition: all .3s;
+    }
+}

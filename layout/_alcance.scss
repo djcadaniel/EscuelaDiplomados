@@ -1,0 +1,71 @@
+.alcance {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+    min-width: 290px;
+    margin: 0 auto;
+    color: $white;
+    background-color: $black;
+}
+
+.alcance__vision {
+    padding: 2%;
+    text-align: justify;
+}
+
+.alcance__vision--title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.alcance__imagen img {
+    width: 15vw;
+    min-width: 170px;
+    max-width: 250px;
+}
+
+.alcance__mision {
+    padding: 2%;
+    text-align: justify;
+}
+
+.alcance__mision--title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.alcance__mision--lista {
+    list-style: none;
+}
+
+.alcance__objetivos {
+    padding: 2%;
+    text-align: justify;
+}
+
+.alcance__objetivos--title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.alcance__objetivos--lista {
+    list-style: none;
+}
+
+@media only screen and(max-width:964px) {
+    .alcance {
+        grid-template-rows: 4fr;
+        grid-template-columns: 1fr;
+    }
+
+    .alcance__imagen {
+        display: none;
+    }
+
+    .alcance__objetivos--title {
+        margin: 0;
+    }
+}
